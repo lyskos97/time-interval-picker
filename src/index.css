@@ -36,13 +36,38 @@ span {
   padding: 10px;
   margin: 5px;
   color: #cf48cf;
+  cursor: pointer;  
 }
 
-.cell:hover {
-  cursor: pointer;
-  background: #cf48cf;
-  color: #fff;
+.cellActive {
+  color: #cf48cf;
 }
 
 .cellSelected {
+  background: #912891;
+  color: #fff;
+  border-color: #8b548b;
+}
+
+.cellInactive {
+  cursor: default;
+  background: #eceaec;
+  color: #969292;
+  border-color: #969292;
+}
+
+.cell:hover {
+  background: #ce49ce;
+  color: #fff;
+}
+
+.cellSelected:hover {
+  background: #8b548b;
+  color: #fff;
+  border-color: #8b548b;
+}
+
+.cellInactive:hover {
+  background: #fff;
+  color: #696565;
 }

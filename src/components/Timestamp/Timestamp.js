@@ -1,10 +1,12 @@
 /* @flow */
+/* eslint-disable */
 
 import * as React from 'react';
 import fns from 'date-fns';
 
 type Props = {
   time: Date,
+  status: 'selected' | 'active' | 'inactive',
 };
 
 export default class Timestamp extends React.Component<Props, void> {
@@ -13,10 +15,17 @@ export default class Timestamp extends React.Component<Props, void> {
   }
 
   render() {
-    const { time } = this.props;
+    const { time, status } = this.props;
+    let classname = 'cell';
+
+    console.log(time.toLocaleTimeString(), status);
+
+    if (status === 'selected') classname += ' cellSelected';
+    else if (status === 'inactive') classname += ' cellInactive';
+    else classname += ' cellActive';
 
     return (
-      <div className="cell">
+      <div className={classname}>
         <span className="time">{this.formatTime(time)}</span>
       </div>
     );
