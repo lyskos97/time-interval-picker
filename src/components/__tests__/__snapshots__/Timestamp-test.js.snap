@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timestamp render() basic 1`] = `
+<div
+  className="cell cellActive"
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;
+
+exports[`Timestamp render() status \`active\` 1`] = `
+<div
+  className="cell cellActive"
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;
+
+exports[`Timestamp render() status \`inactive\` 1`] = `
+<div
+  className="cell cellInactive"
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;
+
+exports[`Timestamp render() status \`selected\` 1`] = `
+<div
+  className="cell cellSelected"
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;

@@ -1,0 +1,764 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeIntervalPicker constructor() else 1`] = `
+Array [
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T11:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T12:00:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker constructor() if \`isActive\` 1`] = `
+Array [
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "inactive",
+    "value": 2018-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "inactive",
+    "value": 2018-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "inactive",
+    "value": 2018-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T11:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T12:00:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker constructor() if \`isSelected\` 1`] = `
+Array [
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "selected",
+    "value": 2018-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "selected",
+    "value": 2018-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "selected",
+    "value": 2018-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T11:30:00.000Z,
+  },
+  Object {
+    "status": "active",
+    "value": 2018-01-01T12:00:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker render basic 1`] = `
+<div
+  className="wrapper"
+>
+  <h3
+    className="picker-header"
+  >
+    React timespan picker
+  </h3>
+  <div
+    className="picker"
+  >
+    <Timestamp
+      key="0"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:00:00.000Z}
+    />
+    <Timestamp
+      key="1"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:30:00.000Z}
+    />
+    <Timestamp
+      key="2"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:00:00.000Z}
+    />
+    <Timestamp
+      key="3"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:30:00.000Z}
+    />
+    <Timestamp
+      key="4"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:00:00.000Z}
+    />
+    <Timestamp
+      key="5"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:30:00.000Z}
+    />
+    <Timestamp
+      key="6"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:00:00.000Z}
+    />
+    <Timestamp
+      key="7"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:30:00.000Z}
+    />
+    <Timestamp
+      key="8"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T07:00:00.000Z}
+    />
+    <Timestamp
+      key="9"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T07:30:00.000Z}
+    />
+    <Timestamp
+      key="10"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:00:00.000Z}
+    />
+    <Timestamp
+      key="11"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:30:00.000Z}
+    />
+    <Timestamp
+      key="12"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:00:00.000Z}
+    />
+    <Timestamp
+      key="13"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:30:00.000Z}
+    />
+    <Timestamp
+      key="14"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T10:00:00.000Z}
+    />
+    <Timestamp
+      key="15"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T10:30:00.000Z}
+    />
+    <Timestamp
+      key="16"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:00:00.000Z}
+    />
+    <Timestamp
+      key="17"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:30:00.000Z}
+    />
+    <Timestamp
+      key="18"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T12:00:00.000Z}
+    />
+  </div>
+</div>
+`;
+
+exports[`TimeIntervalPicker render has \`busyTime\` 1`] = `
+<div
+  className="wrapper"
+>
+  <h3
+    className="picker-header"
+  >
+    React timespan picker
+  </h3>
+  <div
+    className="picker"
+  >
+    <Timestamp
+      key="0"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:00:00.000Z}
+    />
+    <Timestamp
+      key="1"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:30:00.000Z}
+    />
+    <Timestamp
+      key="2"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:00:00.000Z}
+    />
+    <Timestamp
+      key="3"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:30:00.000Z}
+    />
+    <Timestamp
+      key="4"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:00:00.000Z}
+    />
+    <Timestamp
+      key="5"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:30:00.000Z}
+    />
+    <Timestamp
+      key="6"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:00:00.000Z}
+    />
+    <Timestamp
+      key="7"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:30:00.000Z}
+    />
+    <Timestamp
+      key="8"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T07:00:00.000Z}
+    />
+    <Timestamp
+      key="9"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T07:30:00.000Z}
+    />
+    <Timestamp
+      key="10"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T08:00:00.000Z}
+    />
+    <Timestamp
+      key="11"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:30:00.000Z}
+    />
+    <Timestamp
+      key="12"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:00:00.000Z}
+    />
+    <Timestamp
+      key="13"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:30:00.000Z}
+    />
+    <Timestamp
+      key="14"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T10:00:00.000Z}
+    />
+    <Timestamp
+      key="15"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T10:30:00.000Z}
+    />
+    <Timestamp
+      key="16"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:00:00.000Z}
+    />
+    <Timestamp
+      key="17"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:30:00.000Z}
+    />
+    <Timestamp
+      key="18"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T12:00:00.000Z}
+    />
+  </div>
+</div>
+`;
+
+exports[`TimeIntervalPicker render has \`selectedTime\` 1`] = `
+<div
+  className="wrapper"
+>
+  <h3
+    className="picker-header"
+  >
+    React timespan picker
+  </h3>
+  <div
+    className="picker"
+  >
+    <Timestamp
+      key="0"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:00:00.000Z}
+    />
+    <Timestamp
+      key="1"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:30:00.000Z}
+    />
+    <Timestamp
+      key="2"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:00:00.000Z}
+    />
+    <Timestamp
+      key="3"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:30:00.000Z}
+    />
+    <Timestamp
+      key="4"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:00:00.000Z}
+    />
+    <Timestamp
+      key="5"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:30:00.000Z}
+    />
+    <Timestamp
+      key="6"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:00:00.000Z}
+    />
+    <Timestamp
+      key="7"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:30:00.000Z}
+    />
+    <Timestamp
+      key="8"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T07:00:00.000Z}
+    />
+    <Timestamp
+      key="9"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T07:30:00.000Z}
+    />
+    <Timestamp
+      key="10"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:00:00.000Z}
+    />
+    <Timestamp
+      key="11"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:30:00.000Z}
+    />
+    <Timestamp
+      key="12"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:00:00.000Z}
+    />
+    <Timestamp
+      key="13"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:30:00.000Z}
+    />
+    <Timestamp
+      key="14"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T10:00:00.000Z}
+    />
+    <Timestamp
+      key="15"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T10:30:00.000Z}
+    />
+    <Timestamp
+      key="16"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T11:00:00.000Z}
+    />
+    <Timestamp
+      key="17"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:30:00.000Z}
+    />
+    <Timestamp
+      key="18"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T12:00:00.000Z}
+    />
+  </div>
+</div>
+`;
+
+exports[`TimeIntervalPicker render has \`selectedTime\` and \`busyTime\` 1`] = `
+<div
+  className="wrapper"
+>
+  <h3
+    className="picker-header"
+  >
+    React timespan picker
+  </h3>
+  <div
+    className="picker"
+  >
+    <Timestamp
+      key="0"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:00:00.000Z}
+    />
+    <Timestamp
+      key="1"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T03:30:00.000Z}
+    />
+    <Timestamp
+      key="2"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:00:00.000Z}
+    />
+    <Timestamp
+      key="3"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T04:30:00.000Z}
+    />
+    <Timestamp
+      key="4"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:00:00.000Z}
+    />
+    <Timestamp
+      key="5"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T05:30:00.000Z}
+    />
+    <Timestamp
+      key="6"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:00:00.000Z}
+    />
+    <Timestamp
+      key="7"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T06:30:00.000Z}
+    />
+    <Timestamp
+      key="8"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T07:00:00.000Z}
+    />
+    <Timestamp
+      key="9"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T07:30:00.000Z}
+    />
+    <Timestamp
+      key="10"
+      setActive={[Function]}
+      status="inactive"
+      time={2018-01-01T08:00:00.000Z}
+    />
+    <Timestamp
+      key="11"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T08:30:00.000Z}
+    />
+    <Timestamp
+      key="12"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:00:00.000Z}
+    />
+    <Timestamp
+      key="13"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T09:30:00.000Z}
+    />
+    <Timestamp
+      key="14"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T10:00:00.000Z}
+    />
+    <Timestamp
+      key="15"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T10:30:00.000Z}
+    />
+    <Timestamp
+      key="16"
+      setActive={[Function]}
+      status="selected"
+      time={2018-01-01T11:00:00.000Z}
+    />
+    <Timestamp
+      key="17"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T11:30:00.000Z}
+    />
+    <Timestamp
+      key="18"
+      setActive={[Function]}
+      status="active"
+      time={2018-01-01T12:00:00.000Z}
+    />
+  </div>
+</div>
+`;
