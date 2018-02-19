@@ -1,0 +1,41 @@
+.cell {
+  border: 1px #cf48cf solid;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+  color: #cf48cf;
+  cursor: pointer;
+
+  &:hover {
+    background: #ce49ce;
+    color: #fff;
+  }
+
+  &Active {
+    color: #cf48cf;
+  }
+
+  &Selected {
+    background: #912891;
+    color: #fff;
+    border-color: #8b548b;
+
+    &:hover {
+      background: #8b548b;
+      color: #fff;
+      border-color: #8b548b;
+    }
+  }
+
+  &Inactive {
+    cursor: default;
+    background: #eceaec;
+    color: #969292;
+    border-color: #969292;
+
+    &:hover {
+      background: #fff;
+      color: #696565;
+    }
+  }
+}

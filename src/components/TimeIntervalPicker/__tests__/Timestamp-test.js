@@ -12,19 +12,19 @@ describe('Timestamp', () => {
     });
 
     it('status `selected`', () => {
-      const wrapper = shallow(<Timestamp value={new Date(2018, 0)} status="selected" />);
+      const wrapper = shallow(<Timestamp value={new Date(2018, 1)} status="selected" />);
 
       expect(wrapper).toMatchSnapshot();
     });
 
     it('status `disabled`', () => {
-      const wrapper = shallow(<Timestamp value={new Date(2018, 0)} status="disabled" />);
+      const wrapper = shallow(<Timestamp value={new Date(2018, 2)} status="disabled" />);
 
       expect(wrapper).toMatchSnapshot();
     });
 
     it('status `available`', () => {
-      const wrapper = shallow(<Timestamp value={new Date(2018, 0)} status="available" />);
+      const wrapper = shallow(<Timestamp value={new Date(2018, 3)} status="available" />);
 
       expect(wrapper).toMatchSnapshot();
     });

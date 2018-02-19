@@ -8,9 +8,9 @@ describe('TimeIntervalPicker', () => {
     it('basic', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
         />
       );
 
@@ -20,9 +20,9 @@ describe('TimeIntervalPicker', () => {
     it('has `busyTime`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
           busyTime={[[new Date(2018, 0, 1, 13), new Date(2018, 0, 1, 14)]]}
         />
       );
@@ -33,9 +33,9 @@ describe('TimeIntervalPicker', () => {
     it('has `selectedTime`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
           selectedTime={[[new Date(2018, 0, 1, 16), new Date(2018, 0, 1, 17)]]}
         />
       );
@@ -46,9 +46,9 @@ describe('TimeIntervalPicker', () => {
     it('has `selectedTime` and `busyTime`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
           busyTime={[[new Date(2018, 0, 1, 13), new Date(2018, 0, 1, 14)]]}
           selectedTime={[[new Date(2018, 0, 1, 16), new Date(2018, 0, 1, 17)]]}
         />
@@ -62,9 +62,9 @@ describe('TimeIntervalPicker', () => {
     it('if `isSelected`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
           selectedTime={[[new Date(2018, 0, 1, 16), new Date(2018, 0, 1, 17)]]}
         />
       );
@@ -75,9 +75,9 @@ describe('TimeIntervalPicker', () => {
     it('if `isActive`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
           busyTime={[[new Date(2018, 0, 1, 13), new Date(2018, 0, 1, 14)]]}
         />
       );
@@ -88,9 +88,9 @@ describe('TimeIntervalPicker', () => {
     it('else', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
         />
       );
 
@@ -103,9 +103,9 @@ describe('TimeIntervalPicker', () => {
       it('if `nextDate` is within `busyTime`', () => {
         const wrapper = shallow(
           <TimeIntervalPicker
-            minTime={new Date(2018, 0, 1, 9)}
-            maxTime={new Date(2018, 0, 1, 18)}
-            step={30}
+            timeMin={new Date(2018, 0, 1, 9)}
+            timeMax={new Date(2018, 0, 1, 18)}
+            timeStep={30}
             busyTime={[[new Date(2018, 0, 1, 13), new Date(2018, 0, 1, 14)]]}
           />
         );
@@ -117,9 +117,9 @@ describe('TimeIntervalPicker', () => {
       it('if `nextDate` is outside `busyTime`', () => {
         const wrapper = shallow(
           <TimeIntervalPicker
-            minTime={new Date(2018, 0, 1, 9)}
-            maxTime={new Date(2018, 0, 1, 18)}
-            step={30}
+            timeMin={new Date(2018, 0, 1, 9)}
+            timeMax={new Date(2018, 0, 1, 18)}
+            timeStep={30}
             busyTime={[[new Date(2018, 0, 1, 13), new Date(2018, 0, 1, 14)]]}
           />
         );
@@ -132,9 +132,9 @@ describe('TimeIntervalPicker', () => {
     it('if no `busyTime`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
         />
       );
       const active = wrapper.instance().isActive(new Date(2018, 0, 1, 15, 30));
@@ -148,9 +148,9 @@ describe('TimeIntervalPicker', () => {
       it('if `nextDate` is within `selectedTime`', () => {
         const wrapper = shallow(
           <TimeIntervalPicker
-            minTime={new Date(2018, 0, 1, 9)}
-            maxTime={new Date(2018, 0, 1, 18)}
-            step={30}
+            timeMin={new Date(2018, 0, 1, 9)}
+            timeMax={new Date(2018, 0, 1, 18)}
+            timeStep={30}
             selectedTime={[[new Date(2018, 0, 1, 11), new Date(2018, 0, 1, 12)]]}
           />
         );
@@ -162,9 +162,9 @@ describe('TimeIntervalPicker', () => {
       it('if `nextDate` is outside `selectedTime`', () => {
         const wrapper = shallow(
           <TimeIntervalPicker
-            minTime={new Date(2018, 0, 1, 9)}
-            maxTime={new Date(2018, 0, 1, 18)}
-            step={30}
+            timeMin={new Date(2018, 0, 1, 9)}
+            timeMax={new Date(2018, 0, 1, 18)}
+            timeStep={30}
             selectedTime={[[new Date(2018, 0, 1, 11), new Date(2018, 0, 1, 12)]]}
           />
         );
@@ -177,9 +177,9 @@ describe('TimeIntervalPicker', () => {
     it('if no `selectedTime`', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          minTime={new Date(2018, 0, 1, 9)}
-          maxTime={new Date(2018, 0, 1, 18)}
-          step={30}
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
         />
       );
       const active = wrapper.instance().isSelected(new Date(2018, 0, 1, 15, 30));
@@ -187,6 +187,4 @@ describe('TimeIntervalPicker', () => {
       expect(active).toBe(false);
     });
   });
-
-  
 });

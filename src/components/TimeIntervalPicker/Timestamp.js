@@ -4,6 +4,7 @@
 import * as React from 'react';
 import fns from 'date-fns';
 import { type Stamp } from './TimeIntervalPicker';
+import s from './TimeIntervalPicker.scss';
 
 type Props = {
   handleClick?: () => void,
@@ -24,14 +25,14 @@ export default class Timestamp extends React.Component<Props, void> {
 
   render() {
     const { value, status } = this.props;
-    let classname = 'cell';
+    const classnames = [s.cell];
 
-    if (status === 'selected') classname += ' cellSelected';
-    else if (status === 'disabled') classname += ' cellInactive';
-    else classname += ' cellActive';
+    if (status === 'selected') classnames.push(s.cellSelected);
+    else if (status === 'disabled') classnames.push(s.cellInactive);
+    else classnames.push(s.cellActive);
 
     return (
-      <div className={classname} onClick={this.handleClick}>
+      <div className={classnames.join(' ')} onClick={this.handleClick}>
         <span className="time">{this.formatTime(value)}</span>
       </div>
     );
