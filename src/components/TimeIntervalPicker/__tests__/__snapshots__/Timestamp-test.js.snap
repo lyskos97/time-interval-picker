@@ -26,6 +26,32 @@ exports[`Timestamp render() status \`active\` 1`] = `
 </div>
 `;
 
+exports[`Timestamp render() status \`available\` 1`] = `
+<div
+  className=" "
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;
+
+exports[`Timestamp render() status \`disabled\` 1`] = `
+<div
+  className=" "
+  onClick={[Function]}
+>
+  <span
+    className="time"
+  >
+    00:00
+  </span>
+</div>
+`;
+
 exports[`Timestamp render() status \`inactive\` 1`] = `
 <div
   className="cell cellInactive"

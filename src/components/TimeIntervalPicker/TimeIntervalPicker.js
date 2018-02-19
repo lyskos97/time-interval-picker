@@ -5,13 +5,17 @@ import * as React from 'react';
 import { differenceInMinutes, addMinutes } from 'date-fns';
 import Timestamp from './Timestamp';
 
+export type DateRange = [Date, Date];
+
 type Props = {|
-  minTime: Date,
-  maxTime: Date,
-  step: number,
-  busyTime?: Array<Array<Date>>,
-  selectedTime?: Array<Array<Date>>,
-  cb?: (Array<Array<Date>>) => void,
+  timeMin: Date,
+  timeMax: Date,
+  timeStep: number, // step in minutes
+  serviceDuration?: number, // step in minutes, by default equal to timeStep // TODO
+  multiselect?: boolean, // by default false // TODO
+  busyTime?: Array<DateRange>,
+  selectedTime?: Array<DateRange>,
+  onChange?: (Array<DateRange>) => void,
 |};
 
 export type Stamp = {
@@ -21,21 +25,21 @@ export type Stamp = {
 
 type State = {
   stamps: Array<Stamp>,
-  selectedTime: Array<Array<Date>> | void,
+  selectedTime: Array<DateRange> | void,
 };
 
 export default class TimeIntervalPicker extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    const { minTime, maxTime, step } = props;
+    const { timeMin, timeMax, timeStep } = props;
 
-    const diffInMinutes = differenceInMinutes(maxTime, minTime);
-    const stampsNo = diffInMinutes / step;
+    const diffInMinutes = differenceInMinutes(timeMax, timeMin);
+    const stampsNo = diffInMinutes / timeStep;
     const stamps: Array<Stamp> = [];
 
     for (let i = 0; i <= stampsNo; i++) {
-      const nextDate = addMinutes(minTime, step * i);
+      const nextDate = addMinutes(timeMin, timeStep * i);
 
       if (this.isSelected(nextDate)) {
         stamps.push({ value: nextDate, status: 'selected' });
@@ -94,13 +98,13 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
 
     this.setState({ stamps }, () => {
       if (!selectedTime) return;
-      const { cb, step } = this.props;
+      const { onChange, timeStep } = this.props;
       const cbTime = selectedTime.slice();
 
-      cbTime.push([stamps[i].value, addMinutes(stamps[i].value, step - 1)]);
+      cbTime.push([stamps[i].value, addMinutes(stamps[i].value, timeStep - 1)]);
 
       this.setState({ selectedTime: cbTime }, () => {
-        if (cb) cb(cbTime);
+        if (onChange) onChange(cbTime);
       });
     });
   }
