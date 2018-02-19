@@ -7,14 +7,8 @@ import TimeIntervalPicker from './components/TimeIntervalPicker';
 type Props = {};
 
 export default class App extends React.Component<Props, void> {
-  cb = (value: Array<Date>) => {
-    console.log(
-      'callback invoked on',
-      // fns.format(value[0], 'HH:mm'),
-      // '-',
-      // fns.format(value[1], 'HH:mm')
-      value
-    );
+  cb = (value: Array<Array<Date>>) => {
+    console.log('callback invoked on', value);
   };
 
   render() {

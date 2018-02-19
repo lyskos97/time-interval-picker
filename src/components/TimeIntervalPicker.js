@@ -1,4 +1,5 @@
 /* @flow */
+/* eslint-disable react/no-array-index-key */
 
 import * as React from 'react';
 import { differenceInMinutes, addMinutes } from 'date-fns';
@@ -10,7 +11,7 @@ type Props = {|
   step: number,
   busyTime?: Array<Array<Date>>,
   selectedTime?: Array<Array<Date>>,
-  cb?: (Array<Date>) => void,
+  cb?: (Array<Array<Date>>) => void,
 |};
 
 export type Stamp = {
@@ -20,7 +21,7 @@ export type Stamp = {
 
 type State = {
   stamps: Array<Stamp>,
-  selectedTime: Array<Array<Date>>,
+  selectedTime: Array<Array<Date>> | void,
 };
 
 export default class TimeIntervalPicker extends React.Component<Props, State> {
@@ -48,7 +49,7 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     this.state = { stamps, selectedTime: props.selectedTime };
   }
 
-  // TODO: merge? `isActive()` and `isSelected()` into `belongsTo()`
+  // TODO: merge? `isActive()` and `isSelected()` into `belongsTo()?`
   isActive(nextDate: Date): boolean {
     const { busyTime } = this.props;
     let active = true;
@@ -81,29 +82,42 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     return selected;
   }
 
-  selectTime(i: number) {
+  // TODO: push only selected to `this.state.selectedTime`
+  onStampClick(i: number) {
     const { selectedTime, stamps } = this.state;
 
-    if (stamps[i].status === 'available') stamps[i].status = 'selected';
-    else stamps[i].status = 'available';
+    if (stamps[i].status === 'available') {
+      stamps[i].status = 'selected';
+    } else {
+      stamps[i].status = 'available';
+    }
 
     this.setState({ stamps }, () => {
+      if (!selectedTime) return;
       const { cb, step } = this.props;
       const cbTime = selectedTime.slice();
 
       cbTime.push([stamps[i].value, addMinutes(stamps[i].value, step - 1)]);
+
       this.setState({ selectedTime: cbTime }, () => {
         if (cb) cb(cbTime);
       });
     });
   }
 
+  // getStampAdjacency(stamp: Stamp): -1 | 0 | 1 | 2 {
+  //   const { selectedTime } = this.state;
+
+  //   selectedTime.forEach(el => {
+  //     differenceInMinutes();
+  //   });
+
+  //   return 0;
+  // }
+
   render() {
     const { stamps } = this.state;
 
-    console.log('stamps', stamps);
-
-    /* eslint-disable */
     return (
       <div className="wrapper">
         <h3 className="picker-header">React timestamps picker</h3>
@@ -114,7 +128,7 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
               value={el.value}
               status={el.status}
               handleClick={() => {
-                this.selectTime(i);
+                this.onStampClick(i);
               }}
             />
           ))}
