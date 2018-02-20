@@ -3,80 +3,76 @@
 exports[`TimeIntervalPicker constructor() else 1`] = `
 Array [
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T03:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T03:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T04:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T04:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T05:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T05:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T06:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T06:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T07:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T07:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T07:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T07:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T08:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T08:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T08:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T08:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T09:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T09:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T10:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T10:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T10:30:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T10:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T11:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T11:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T11:30:00.000Z,
-  },
-  Object {
-    "status": "active",
-    "value": 2018-01-01T12:00:00.000Z,
+    "status": "available",
+    "value": 2017-01-01T11:30:00.000Z,
   },
 ]
 `;
@@ -84,80 +80,76 @@ Array [
 exports[`TimeIntervalPicker constructor() if \`isActive\` 1`] = `
 Array [
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T03:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T03:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T04:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T04:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T05:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T05:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T06:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T06:30:00.000Z,
   },
   Object {
-    "status": "inactive",
-    "value": 2018-01-01T07:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T07:00:00.000Z,
   },
   Object {
-    "status": "inactive",
-    "value": 2018-01-01T07:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T07:30:00.000Z,
   },
   Object {
-    "status": "inactive",
-    "value": 2018-01-01T08:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T08:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T08:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T08:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T09:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T09:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T10:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T10:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T10:30:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T10:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T11:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T11:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T11:30:00.000Z,
-  },
-  Object {
-    "status": "active",
-    "value": 2018-01-01T12:00:00.000Z,
+    "status": "available",
+    "value": 2016-01-01T11:30:00.000Z,
   },
 ]
 `;
@@ -165,80 +157,538 @@ Array [
 exports[`TimeIntervalPicker constructor() if \`isSelected\` 1`] = `
 Array [
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T03:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T03:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T03:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T04:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T04:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T04:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T05:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T05:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T05:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T06:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T06:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T06:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T07:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T07:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T07:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T07:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T08:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T08:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T08:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T08:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:00:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T09:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T09:30:00.000Z,
+    "status": "available",
+    "value": 2015-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2015-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2015-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2015-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2015-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at available with \`onChange() callback\` 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2115-01-01T03:00:00.000Z,
   },
   Object {
     "status": "selected",
-    "value": 2018-01-01T10:00:00.000Z,
+    "value": 2115-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2115-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at available without \`onChange()\` callback 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2001-01-01T03:00:00.000Z,
   },
   Object {
     "status": "selected",
-    "value": 2018-01-01T10:30:00.000Z,
+    "value": 2001-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2001-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at disabled with \`onChange() callback\` 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2005-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2005-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2005-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2005-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T05:00:00.000Z,
   },
   Object {
     "status": "selected",
-    "value": 2018-01-01T11:00:00.000Z,
+    "value": 2005-01-01T05:30:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T11:30:00.000Z,
+    "status": "available",
+    "value": 2005-01-01T06:00:00.000Z,
   },
   Object {
-    "status": "active",
-    "value": 2018-01-01T12:00:00.000Z,
+    "status": "available",
+    "value": 2005-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2005-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at disabled without \`onChange()\` callback 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2006-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2006-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2006-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "disabled",
+    "value": 2006-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2006-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at selected with \`onChange() callback\` 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2002-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2002-01-01T11:30:00.000Z,
+  },
+]
+`;
+
+exports[`TimeIntervalPicker onStampClick() at selected without \`onChange()\` callback 1`] = `
+Array [
+  Object {
+    "status": "available",
+    "value": 2003-01-01T03:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T03:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T04:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T04:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T05:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T05:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T06:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T06:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T07:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T07:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T08:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T08:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T09:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T09:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T10:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T10:30:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T11:00:00.000Z,
+  },
+  Object {
+    "status": "available",
+    "value": 2003-01-01T11:30:00.000Z,
   },
 ]
 `;
@@ -256,118 +706,112 @@ exports[`TimeIntervalPicker render basic 1`] = `
     className="picker"
   >
     <Timestamp
+      handleClick={[Function]}
       key="0"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:00:00.000Z}
+      status="available"
+      value={2018-01-01T03:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="1"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:30:00.000Z}
+      status="available"
+      value={2018-01-01T03:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="2"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:00:00.000Z}
+      status="available"
+      value={2018-01-01T04:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="3"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:30:00.000Z}
+      status="available"
+      value={2018-01-01T04:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="4"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:00:00.000Z}
+      status="available"
+      value={2018-01-01T05:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="5"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:30:00.000Z}
+      status="available"
+      value={2018-01-01T05:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="6"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:00:00.000Z}
+      status="available"
+      value={2018-01-01T06:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="7"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:30:00.000Z}
+      status="available"
+      value={2018-01-01T06:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="8"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T07:00:00.000Z}
+      status="available"
+      value={2018-01-01T07:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="9"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T07:30:00.000Z}
+      status="available"
+      value={2018-01-01T07:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="10"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:00:00.000Z}
+      status="available"
+      value={2018-01-01T08:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="11"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:30:00.000Z}
+      status="available"
+      value={2018-01-01T08:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="12"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:00:00.000Z}
+      status="available"
+      value={2018-01-01T09:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="13"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:30:00.000Z}
+      status="available"
+      value={2018-01-01T09:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="14"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T10:00:00.000Z}
+      status="available"
+      value={2018-01-01T10:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="15"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T10:30:00.000Z}
+      status="available"
+      value={2018-01-01T10:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="16"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:00:00.000Z}
+      status="available"
+      value={2018-01-01T11:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="17"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:30:00.000Z}
-    />
-    <Timestamp
-      key="18"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T12:00:00.000Z}
+      status="available"
+      value={2018-01-01T11:30:00.000Z}
     />
   </div>
 </div>
@@ -386,118 +830,112 @@ exports[`TimeIntervalPicker render has \`busyTime\` 1`] = `
     className="picker"
   >
     <Timestamp
+      handleClick={[Function]}
       key="0"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:00:00.000Z}
+      status="available"
+      value={2028-01-01T03:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="1"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:30:00.000Z}
+      status="available"
+      value={2028-01-01T03:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="2"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:00:00.000Z}
+      status="available"
+      value={2028-01-01T04:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="3"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:30:00.000Z}
+      status="available"
+      value={2028-01-01T04:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="4"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:00:00.000Z}
+      status="available"
+      value={2028-01-01T05:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="5"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:30:00.000Z}
+      status="available"
+      value={2028-01-01T05:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="6"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:00:00.000Z}
+      status="available"
+      value={2028-01-01T06:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="7"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:30:00.000Z}
+      status="available"
+      value={2028-01-01T06:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="8"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T07:00:00.000Z}
+      status="available"
+      value={2028-01-01T07:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="9"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T07:30:00.000Z}
+      status="available"
+      value={2028-01-01T07:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="10"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T08:00:00.000Z}
+      status="available"
+      value={2028-01-01T08:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="11"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:30:00.000Z}
+      status="available"
+      value={2028-01-01T08:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="12"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:00:00.000Z}
+      status="available"
+      value={2028-01-01T09:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="13"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:30:00.000Z}
+      status="available"
+      value={2028-01-01T09:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="14"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T10:00:00.000Z}
+      status="available"
+      value={2028-01-01T10:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="15"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T10:30:00.000Z}
+      status="available"
+      value={2028-01-01T10:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="16"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:00:00.000Z}
+      status="available"
+      value={2028-01-01T11:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="17"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:30:00.000Z}
-    />
-    <Timestamp
-      key="18"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T12:00:00.000Z}
+      status="available"
+      value={2028-01-01T11:30:00.000Z}
     />
   </div>
 </div>
@@ -516,118 +954,112 @@ exports[`TimeIntervalPicker render has \`selectedTime\` 1`] = `
     className="picker"
   >
     <Timestamp
+      handleClick={[Function]}
       key="0"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:00:00.000Z}
+      status="available"
+      value={2011-01-01T03:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="1"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:30:00.000Z}
+      status="available"
+      value={2011-01-01T03:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="2"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:00:00.000Z}
+      status="available"
+      value={2011-01-01T04:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="3"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:30:00.000Z}
+      status="available"
+      value={2011-01-01T04:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="4"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:00:00.000Z}
+      status="available"
+      value={2011-01-01T05:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="5"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:30:00.000Z}
+      status="available"
+      value={2011-01-01T05:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="6"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:00:00.000Z}
+      status="available"
+      value={2011-01-01T06:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="7"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:30:00.000Z}
+      status="available"
+      value={2011-01-01T06:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="8"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T07:00:00.000Z}
+      status="available"
+      value={2011-01-01T07:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="9"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T07:30:00.000Z}
+      status="available"
+      value={2011-01-01T07:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="10"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:00:00.000Z}
+      status="available"
+      value={2011-01-01T08:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="11"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:30:00.000Z}
+      status="available"
+      value={2011-01-01T08:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="12"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:00:00.000Z}
+      status="available"
+      value={2011-01-01T09:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="13"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:30:00.000Z}
+      status="available"
+      value={2011-01-01T09:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="14"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T10:00:00.000Z}
+      status="available"
+      value={2011-01-01T10:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="15"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T10:30:00.000Z}
+      status="available"
+      value={2011-01-01T10:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="16"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T11:00:00.000Z}
+      status="available"
+      value={2011-01-01T11:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="17"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:30:00.000Z}
-    />
-    <Timestamp
-      key="18"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T12:00:00.000Z}
+      status="available"
+      value={2011-01-01T11:30:00.000Z}
     />
   </div>
 </div>
@@ -646,118 +1078,236 @@ exports[`TimeIntervalPicker render has \`selectedTime\` and \`busyTime\` 1`] = `
     className="picker"
   >
     <Timestamp
+      handleClick={[Function]}
       key="0"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:00:00.000Z}
+      status="available"
+      value={2012-01-01T03:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="1"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T03:30:00.000Z}
+      status="available"
+      value={2012-01-01T03:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="2"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:00:00.000Z}
+      status="available"
+      value={2012-01-01T04:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="3"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T04:30:00.000Z}
+      status="available"
+      value={2012-01-01T04:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="4"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:00:00.000Z}
+      status="available"
+      value={2012-01-01T05:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="5"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T05:30:00.000Z}
+      status="available"
+      value={2012-01-01T05:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="6"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:00:00.000Z}
+      status="available"
+      value={2012-01-01T06:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="7"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T06:30:00.000Z}
+      status="available"
+      value={2012-01-01T06:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="8"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T07:00:00.000Z}
+      status="available"
+      value={2012-01-01T07:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="9"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T07:30:00.000Z}
+      status="available"
+      value={2012-01-01T07:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="10"
-      setActive={[Function]}
-      status="inactive"
-      time={2018-01-01T08:00:00.000Z}
+      status="available"
+      value={2012-01-01T08:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="11"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T08:30:00.000Z}
+      status="available"
+      value={2012-01-01T08:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="12"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:00:00.000Z}
+      status="available"
+      value={2012-01-01T09:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="13"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T09:30:00.000Z}
+      status="available"
+      value={2012-01-01T09:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="14"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T10:00:00.000Z}
+      status="available"
+      value={2012-01-01T10:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="15"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T10:30:00.000Z}
+      status="available"
+      value={2012-01-01T10:30:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="16"
-      setActive={[Function]}
-      status="selected"
-      time={2018-01-01T11:00:00.000Z}
+      status="available"
+      value={2012-01-01T11:00:00.000Z}
     />
     <Timestamp
+      handleClick={[Function]}
       key="17"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T11:30:00.000Z}
+      status="available"
+      value={2012-01-01T11:30:00.000Z}
+    />
+  </div>
+</div>
+`;
+
+exports[`TimeIntervalPicker render has \`selectedTime\` and \`busyTime\` 2`] = `
+<div
+  className="wrapper"
+>
+  <h3
+    className="picker-header"
+  >
+    React timespan picker
+  </h3>
+  <div
+    className="picker"
+  >
+    <Timestamp
+      handleClick={[Function]}
+      key="0"
+      status="available"
+      value={2014-01-01T03:00:00.000Z}
     />
     <Timestamp
-      key="18"
-      setActive={[Function]}
-      status="active"
-      time={2018-01-01T12:00:00.000Z}
+      handleClick={[Function]}
+      key="1"
+      status="available"
+      value={2014-01-01T03:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="2"
+      status="available"
+      value={2014-01-01T04:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="3"
+      status="available"
+      value={2014-01-01T04:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="4"
+      status="available"
+      value={2014-01-01T05:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="5"
+      status="available"
+      value={2014-01-01T05:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="6"
+      status="available"
+      value={2014-01-01T06:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="7"
+      status="available"
+      value={2014-01-01T06:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="8"
+      status="available"
+      value={2014-01-01T07:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="9"
+      status="available"
+      value={2014-01-01T07:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="10"
+      status="available"
+      value={2014-01-01T08:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="11"
+      status="available"
+      value={2014-01-01T08:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="12"
+      status="available"
+      value={2014-01-01T09:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="13"
+      status="available"
+      value={2014-01-01T09:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="14"
+      status="available"
+      value={2014-01-01T10:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="15"
+      status="available"
+      value={2014-01-01T10:30:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="16"
+      status="available"
+      value={2014-01-01T11:00:00.000Z}
+    />
+    <Timestamp
+      handleClick={[Function]}
+      key="17"
+      status="available"
+      value={2014-01-01T11:30:00.000Z}
     />
   </div>
 </div>
