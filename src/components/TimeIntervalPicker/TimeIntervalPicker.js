@@ -52,9 +52,9 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
       if (this.isSelected(nextDate)) {
         stamps.push({ value: nextDate, status: 'selected' });
       } else if (this.isDisabled(nextDate)) {
-        stamps.push({ value: nextDate, status: 'available' });
-      } else {
         stamps.push({ value: nextDate, status: 'disabled' });
+      } else {
+        stamps.push({ value: nextDate, status: 'available' });
       }
     }
 
@@ -87,49 +87,9 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     return selected;
   }
 
-  // TODO: remove redundant
-  isSelectedState(nextDate: Date): boolean {
-    const { selectedTime } = this.state;
-    let selected = false;
-
-    if (selectedTime) {
-      selectedTime.forEach(elArr => {
-        if (nextDate.getTime() >= elArr[0].getTime() && nextDate.getTime() <= elArr[1].getTime()) {
-          selected = true;
-        }
-      });
-    }
-
-    return selected;
-  }
-
-  // TODO: push only selected to `this.state.selectedTime`
   onStampClick(i: number) {
-    const { selectedTime, stamps } = this.state;
-
-    if (stamps[i].status === 'available') {
-      stamps[i].status = 'selected';
-    } else {
-      stamps[i].status = 'available';
-    }
-
-    this.setState({ stamps }, () => {
-      if (!selectedTime) return;
-      const { onChange, timeStep } = this.props;
-      const cbTime = selectedTime.slice();
-
-      cbTime.push([stamps[i].value, addMinutes(stamps[i].value, timeStep - 1)]);
-
-      this.setState({ selectedTime: cbTime }, () => {
-        if (onChange) onChange(cbTime);
-      });
-    });
-  }
-
-  onStampClick2(i: number) {
     const { selectedTime = [], stamps } = this.state;
     const { onChange, timeStep } = this.props;
-    // const cbTime = selectedTime.slice();
 
     if (stamps[i].status === 'available') {
       stamps[i].status = 'selected';
@@ -137,9 +97,7 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     } else if (stamps[i].status === 'selected') {
       stamps[i].status = 'available';
       const selectedIndex = selectedTime.findIndex(() => this.isSelected(stamps[i].value));
-      console.log('selectedTime before', selectedTime);
-      selectedTime.splice(selectedIndex, 0);
-      console.log('selectedTime after', selectedTime);
+      selectedTime.splice(selectedIndex, 1);
     } else return;
 
     this.setState({ stamps, selectedTime }, () => {
@@ -160,7 +118,7 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
               value={el.value}
               status={el.status}
               handleClick={() => {
-                this.onStampClick2(i);
+                this.onStampClick(i);
               }}
             />
           ))}
