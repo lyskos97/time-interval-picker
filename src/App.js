@@ -1,7 +1,6 @@
 /* @flow */
 
 import React from 'react';
-// import fns from 'date-fns';
 import TimeIntervalPicker, {
   type DateRange,
 } from './components/TimeIntervalPicker/TimeIntervalPicker';
