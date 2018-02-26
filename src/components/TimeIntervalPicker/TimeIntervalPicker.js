@@ -25,7 +25,7 @@ export type Stamp = {
 
 type State = {
   stamps: Array<Stamp>,
-  selectedTime: Array<DateRange> | void,
+  selectedTime?: Array<DateRange>,
 };
 
 export default class TimeIntervalPicker extends React.Component<Props, State> {
@@ -36,8 +36,8 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
 
     const stamps = this.getStampsFromProps();
 
-    // double assigning for proper work of `this.isSelected()`
-    this.state = { stamps, selectedTime: props.selectedTime };
+    // double assigning for proper work of `this.isSelected()` which depends on props only
+    this.state = { selectedTime: props.selectedTime, stamps };
   }
 
   getStampsFromProps(): Array<Stamp> {
@@ -88,8 +88,47 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
   }
 
   onStampClick(i: number) {
+    const { onChange, multiselect = true } = this.props;
+
+    let selectedTimeAndStamps;
+
+    if (multiselect) {
+      selectedTimeAndStamps = this.handleMulticlick(i);
+    } else {
+      selectedTimeAndStamps = this.handleSingleclick(i);
+    }
+
+    this.setState(selectedTimeAndStamps, () => {
+      const { selectedTime } = selectedTimeAndStamps;
+
+      if (onChange) onChange(selectedTime);
+    });
+  }
+
+  handleSingleclick(i: number): { selectedTime: Array<DateRange>, stamps: Array<Stamp> } {
+    let { selectedTime = [], stamps } = this.state;
+    const { timeStep } = this.props;
+
+    // reset available stamps
+    stamps = stamps.map(el => {
+      let { status } = el;
+      const { value } = el;
+
+      if (status === 'selected') status = 'available';
+
+      return { status, value };
+    });
+
+    stamps[i].status = 'selected';
+
+    selectedTime = [[stamps[i].value, addMinutes(stamps[i].value, timeStep - 1)]];
+
+    return { selectedTime, stamps };
+  }
+
+  handleMulticlick(i: number): { selectedTime: Array<DateRange>, stamps: Array<Stamp> } {
     const { selectedTime = [], stamps } = this.state;
-    const { onChange, timeStep } = this.props;
+    const { timeStep } = this.props;
 
     if (stamps[i].status === 'available') {
       stamps[i].status = 'selected';
@@ -98,11 +137,9 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
       stamps[i].status = 'available';
       const selectedIndex = selectedTime.findIndex(() => this.isSelected(stamps[i].value));
       selectedTime.splice(selectedIndex, 1);
-    } else return;
+    }
 
-    this.setState({ stamps, selectedTime }, () => {
-      if (onChange) onChange(selectedTime);
-    });
+    return { selectedTime, stamps };
   }
 
   render() {

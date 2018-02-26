@@ -202,18 +202,38 @@ describe('TimeIntervalPicker', () => {
     });
   });
 
-  describe.skip('multiselect', () => {
+  describe('multiselect', () => {
     it('false', () => {
       const wrapper = shallow(
         <TimeIntervalPicker
-          timeMin={new Date(2018, 0, 1, 9)}
-          timeMax={new Date(2018, 0, 1, 18)}
+          timeMin={new Date(2551, 0, 1, 9)}
+          timeMax={new Date(2551, 0, 1, 18)}
           timeStep={30}
           multiselect={false}
         />
       );
 
-      expect(wrapper).toBe();
+      wrapper.instance().onStampClick(1);
+      wrapper.instance().onStampClick(4);
+
+      expect(wrapper.state('selectedTime')).toHaveLength(1);
+    });
+
+    it('true', () => {
+      const wrapper = shallow(
+        <TimeIntervalPicker
+          timeMin={new Date(2018, 0, 1, 9)}
+          timeMax={new Date(2018, 0, 1, 18)}
+          timeStep={30}
+        />
+      );
+
+      wrapper.instance().onStampClick(1);
+      wrapper.instance().onStampClick(2);
+      wrapper.instance().onStampClick(3);
+      wrapper.instance().onStampClick(1);
+
+      expect(wrapper.state('selectedTime')).toHaveLength(2);
     });
   });
 

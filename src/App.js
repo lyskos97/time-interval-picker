@@ -25,6 +25,7 @@ export default class App extends React.Component<Props, void> {
         ]}
         busyTime={[[new Date(2018, 0, 1, 12, 30), new Date(2018, 0, 1, 13, 30)]]}
         onChange={this.cb}
+        multiselect={false}
       />
     );
   }
