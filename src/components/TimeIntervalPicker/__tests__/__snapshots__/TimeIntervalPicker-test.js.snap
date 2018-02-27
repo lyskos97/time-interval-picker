@@ -693,6 +693,753 @@ Array [
 ]
 `;
 
+exports[`TimeIntervalPicker onStampClickNew() at disabled 1`] = `
+Object {
+  "selectedTime": Array [
+    2115-01-01T03:30:00.000Z,
+    2115-01-01T04:00:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2115-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2115-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2115-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2115-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() with \`onChange\` callback \`eventDuration\` undefined 1`] = `
+Object {
+  "selectedTime": Array [
+    2123-01-01T07:00:00.000Z,
+    2123-01-01T07:30:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2123-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2123-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2123-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2123-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2123-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() with \`onChange\` callback eventDuration < timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2122-01-01T06:00:00.000Z,
+    2122-01-01T06:29:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2122-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2122-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2122-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() with \`onChange\` callback eventDuration === timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2120-01-01T03:30:00.000Z,
+    2120-01-01T04:00:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2120-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2120-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2120-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2120-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2120-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() with \`onChange\` callback eventDuration > timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2121-01-01T04:30:00.000Z,
+    2121-01-01T05:29:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2121-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2121-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2121-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2121-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2121-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() without \`onChange\` callback \`eventDuration\` undefined 1`] = `
+Object {
+  "selectedTime": Array [
+    2119-01-01T07:00:00.000Z,
+    2119-01-01T07:30:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2119-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2119-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2119-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2119-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2119-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() without \`onChange\` callback eventDuration === timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2115-01-01T03:30:00.000Z,
+    2115-01-01T04:00:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2115-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2115-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2115-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2115-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2115-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() without \`onChange\` callback eventDuration is bigger than timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2116-01-01T04:30:00.000Z,
+    2116-01-01T05:29:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2116-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2116-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2116-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2116-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "reserved",
+      "value": 2116-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
+exports[`TimeIntervalPicker onStampClickNew() without \`onChange\` callback eventDuration is smaller than timeStep 1`] = `
+Object {
+  "selectedTime": Array [
+    2117-01-01T06:00:00.000Z,
+    2117-01-01T06:29:00.000Z,
+  ],
+  "stamps": Array [
+    Object {
+      "status": "available",
+      "value": 2117-01-01T03:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T03:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T04:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T04:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T05:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T05:30:00.000Z,
+    },
+    Object {
+      "status": "selected",
+      "value": 2117-01-01T06:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T06:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T07:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T07:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T08:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T08:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T09:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T09:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T10:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T10:30:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T11:00:00.000Z,
+    },
+    Object {
+      "status": "available",
+      "value": 2117-01-01T11:30:00.000Z,
+    },
+  ],
+}
+`;
+
 exports[`TimeIntervalPicker render basic 1`] = `
 <div
   className="wrapper"

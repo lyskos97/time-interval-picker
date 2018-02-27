@@ -1,9 +1,10 @@
 /* @flow */
-/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/no-array-index-key, react/no-unused-state */
 
 import * as React from 'react';
-import { differenceInMinutes, addMinutes, isWithinRange } from 'date-fns';
+import { differenceInMinutes, addMinutes, isWithinRange, subMinutes } from 'date-fns';
 import Timestamp from './Timestamp';
+import isWithinDateRanges from './utils';
 
 export type DateRange = [Date, Date];
 
@@ -11,21 +12,20 @@ type Props = {|
   timeMin: Date,
   timeMax: Date,
   timeStep: number, // step in minutes
-  serviceDuration?: number, // step in minutes, by default equal to timeStep // TODO
-  multiselect?: boolean, // by default false // TODO
+  eventDuration?: number, // step in minutes, by default equal to timeStep // TODO
   busyTime?: Array<DateRange>,
-  selectedTime?: Array<DateRange>,
-  onChange?: (Array<DateRange>) => void,
+  selectedTime?: DateRange,
+  onChange?: DateRange => void,
 |};
 
 export type Stamp = {
   value: Date,
-  status?: 'selected' | 'available' | 'disabled',
+  status?: 'selected' | 'available' | 'disabled' | 'reserved',
 };
 
 type State = {
   stamps: Array<Stamp>,
-  selectedTime?: Array<DateRange>,
+  selectedTime?: DateRange,
 };
 
 export default class TimeIntervalPicker extends React.Component<Props, State> {
@@ -34,14 +34,16 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
 
     this.state = { selectedTime: props.selectedTime, stamps: [] };
 
-    const stamps = this.getStampsFromProps();
+    const stamps = this.getDefaultStamps();
 
     // double assigning for proper work of `this.isSelected()` which depends on props only
     this.state = { selectedTime: props.selectedTime, stamps };
   }
 
-  getStampsFromProps(): Array<Stamp> {
-    const { timeMin, timeMax, timeStep } = this.props;
+  getDefaultStamps(): Array<Stamp> {
+    const { timeMin, timeMax, timeStep, busyTime = [] } = this.props;
+    const { selectedTime = [] } = this.state;
+
     const stamps: Array<Stamp> = [];
     const diffInMinutes = differenceInMinutes(timeMax, timeMin);
     const stampsNumber = diffInMinutes / timeStep;
@@ -49,9 +51,11 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     for (let i = 0; i < stampsNumber; i++) {
       const nextDate = addMinutes(timeMin, timeStep * i);
 
-      if (this.isSelected(nextDate)) {
+      if (isWithinRange(nextDate, ...selectedTime)) {
         stamps.push({ value: nextDate, status: 'selected' });
-      } else if (this.isDisabled(nextDate)) {
+      } else if (!this.isSuitable(nextDate)) {
+        stamps.push({ value: nextDate, status: 'reserved' });
+      } else if (isWithinDateRanges(nextDate, busyTime) || !this.isSuitable(nextDate)) {
         stamps.push({ value: nextDate, status: 'disabled' });
       } else {
         stamps.push({ value: nextDate, status: 'available' });
@@ -61,85 +65,45 @@ export default class TimeIntervalPicker extends React.Component<Props, State> {
     return stamps;
   }
 
-  isDisabled(nextDate: Date): boolean {
-    const { busyTime } = this.props;
-    let disabled = false;
+  isSuitable(date: Date): boolean {
+    const { timeMax, timeStep, eventDuration = timeStep } = this.props;
+    let suitable = true;
 
-    if (busyTime) {
-      busyTime.forEach(datePair => {
-        if (isWithinRange(nextDate, ...datePair)) disabled = true;
-      });
-    }
+    const lim = subMinutes(timeMax, eventDuration);
 
-    return disabled;
+    if (isWithinRange(date, lim, timeMax)) suitable = false;
+
+    return suitable;
   }
 
-  isSelected(nextDate: Date): boolean {
-    const { selectedTime } = this.state;
-    let selected = false;
-
-    if (selectedTime) {
-      selectedTime.forEach(datePair => {
-        if (isWithinRange(nextDate, ...datePair)) selected = true;
-      });
-    }
-
-    return selected;
-  }
-
+  // TODO: should not grab following disabled stamps
   onStampClick(i: number) {
-    const { onChange, multiselect = true } = this.props;
+    const { onChange, timeStep, eventDuration = timeStep } = this.props;
+    let { stamps } = this.state;
+    // const { busyTime = [] } = this.props;
+    const eventStart = stamps[i].value;
+    let eventEnd;
 
-    let selectedTimeAndStamps;
+    // calc `eventEnd` from `eventStart` and `eventDuration` & `timeStep`
+    if (eventDuration === timeStep) eventEnd = addMinutes(eventStart, eventDuration);
+    else
+      eventEnd = addMinutes(eventStart, eventDuration + (timeStep - eventDuration % timeStep) - 1);
 
-    if (multiselect) {
-      selectedTimeAndStamps = this.handleMulticlick(i);
-    } else {
-      selectedTimeAndStamps = this.handleSingleclick(i);
-    }
+    const selectedTime = [eventStart, eventEnd];
 
-    this.setState(selectedTimeAndStamps, () => {
-      const { selectedTime } = selectedTimeAndStamps;
+    stamps = stamps.map(el => {
+      const { value } = el;
+      let { status } = el;
 
+      if (isWithinRange(value, eventStart, eventEnd) && status !== 'disabled') status = 'selected';
+      else if (status === 'selected') status = 'available';
+
+      return { value, status };
+    });
+
+    this.setState({ stamps, selectedTime }, () => {
       if (onChange) onChange(selectedTime);
     });
-  }
-
-  handleSingleclick(i: number): { selectedTime: Array<DateRange>, stamps: Array<Stamp> } {
-    let { selectedTime = [], stamps } = this.state;
-    const { timeStep } = this.props;
-
-    // reset available stamps
-    stamps = stamps.map(el => {
-      let { status } = el;
-      const { value } = el;
-
-      if (status === 'selected') status = 'available';
-
-      return { status, value };
-    });
-
-    stamps[i].status = 'selected';
-
-    selectedTime = [[stamps[i].value, addMinutes(stamps[i].value, timeStep - 1)]];
-
-    return { selectedTime, stamps };
-  }
-
-  handleMulticlick(i: number): { selectedTime: Array<DateRange>, stamps: Array<Stamp> } {
-    const { selectedTime = [], stamps } = this.state;
-    const { timeStep } = this.props;
-
-    if (stamps[i].status === 'available') {
-      stamps[i].status = 'selected';
-      selectedTime.push([stamps[i].value, addMinutes(stamps[i].value, timeStep - 1)]);
-    } else if (stamps[i].status === 'selected') {
-      stamps[i].status = 'available';
-      const selectedIndex = selectedTime.findIndex(() => this.isSelected(stamps[i].value));
-      selectedTime.splice(selectedIndex, 1);
-    }
-
-    return { selectedTime, stamps };
   }
 
   render() {

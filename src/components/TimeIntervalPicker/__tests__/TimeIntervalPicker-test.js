@@ -343,4 +343,155 @@ describe('TimeIntervalPicker', () => {
       });
     });
   });
+
+  describe.only('onStampClickNew()', () => {
+    describe('with `onChange` callback', () => {
+      it('eventDuration === timeStep', () => {
+        const onChange = jest.fn();
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2120, 0, 1, 9)}
+            timeMax={new Date(2120, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={30}
+            onChange={onChange}
+          />
+        );
+
+        wrapper.instance().onStampClick(1);
+
+        expect(wrapper.state()).toMatchSnapshot();
+        expect(onChange).toHaveBeenCalledTimes(1);
+      });
+
+      it('eventDuration > timeStep', () => {
+        const onChange = jest.fn();
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2121, 0, 1, 9)}
+            timeMax={new Date(2121, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={37}
+            onChange={onChange}
+          />
+        );
+
+        wrapper.instance().onStampClick(3);
+
+        expect(wrapper.state()).toMatchSnapshot();
+        expect(onChange).toHaveBeenCalledTimes(1);
+      });
+
+      it('eventDuration < timeStep', () => {
+        const onChange = jest.fn();
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2122, 0, 1, 9)}
+            timeMax={new Date(2122, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={20}
+            onChange={onChange}
+          />
+        );
+
+        wrapper.instance().onStampClick(6);
+
+        expect(wrapper.state()).toMatchSnapshot();
+        expect(onChange).toHaveBeenCalledTimes(1);
+      });
+
+      it('`eventDuration` undefined', () => {
+        const onChange = jest.fn();
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2123, 0, 1, 9)}
+            timeMax={new Date(2123, 0, 1, 18)}
+            timeStep={30}
+            onChange={onChange}
+          />
+        );
+
+        wrapper.instance().onStampClick(8);
+
+        expect(wrapper.state()).toMatchSnapshot();
+        expect(onChange).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('without `onChange` callback', () => {
+      it('eventDuration === timeStep', () => {
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2115, 0, 1, 9)}
+            timeMax={new Date(2115, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={30}
+          />
+        );
+
+        wrapper.instance().onStampClick(1);
+
+        expect(wrapper.state()).toMatchSnapshot();
+      });
+
+      it('eventDuration is bigger than timeStep', () => {
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2116, 0, 1, 9)}
+            timeMax={new Date(2116, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={37}
+          />
+        );
+
+        wrapper.instance().onStampClick(3);
+
+        expect(wrapper.state()).toMatchSnapshot();
+      });
+
+      it('eventDuration is smaller than timeStep', () => {
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2117, 0, 1, 9)}
+            timeMax={new Date(2117, 0, 1, 18)}
+            timeStep={30}
+            eventDuration={20}
+          />
+        );
+
+        wrapper.instance().onStampClick(6);
+
+        expect(wrapper.state()).toMatchSnapshot();
+      });
+
+      it('`eventDuration` undefined', () => {
+        const wrapper = shallow(
+          <TimeIntervalPicker
+            timeMin={new Date(2119, 0, 1, 9)}
+            timeMax={new Date(2119, 0, 1, 18)}
+            timeStep={30}
+          />
+        );
+
+        wrapper.instance().onStampClick(8);
+
+        expect(wrapper.state()).toMatchSnapshot();
+      });
+    });
+
+    it('at disabled', () => {
+      const wrapper = shallow(
+        <TimeIntervalPicker
+          timeMin={new Date(2115, 0, 1, 9)}
+          timeMax={new Date(2115, 0, 1, 18)}
+          timeStep={30}
+          eventDuration={30}
+        />
+      );
+
+      wrapper.instance().onStampClick(1);
+
+      expect(wrapper.state()).toMatchSnapshot();
+    });
+  });
 });

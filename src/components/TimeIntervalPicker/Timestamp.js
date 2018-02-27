@@ -26,13 +26,16 @@ export default class Timestamp extends React.Component<Props, void> {
   render() {
     const { value, status } = this.props;
     const classnames = [s.cell];
+    let onClick = this.handleClick;
 
     if (status === 'selected') classnames.push(s.cellSelected);
-    else if (status === 'disabled') classnames.push(s.cellInactive);
-    else classnames.push(s.cellActive);
+    else if (status === 'disabled' || status === 'reserved') {
+      classnames.push(s.cellInactive);
+      onClick = null;
+    } else classnames.push(s.cellActive);
 
     return (
-      <div className={classnames.join(' ')} onClick={this.handleClick}>
+      <div className={classnames.join(' ')} onClick={onClick}>
         <span className="time">{this.formatTime(value)}</span>
       </div>
     );

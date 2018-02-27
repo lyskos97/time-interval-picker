@@ -29,7 +29,7 @@ exports[`Timestamp render() status \`available\` 1`] = `
 exports[`Timestamp render() status \`disabled\` 1`] = `
 <div
   className=" "
-  onClick={[Function]}
+  onClick={null}
 >
   <span
     className="time"
